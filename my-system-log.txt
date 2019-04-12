@@ -1,0 +1,50 @@
+Apr 11 18:47:21 localhost.localdomain audit[2375]: CRED_REFR pid=2375 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:47:21 localhost.localdomain sudo[2375]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Apr 11 18:47:21 localhost.localdomain sudo[2375]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 11 18:47:21 localhost.localdomain audit[2375]: USER_START pid=2375 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:47:49 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:49:06 localhost.localdomain PackageKit[1180]: update-packages transaction /411_cbbaabac from uid 1000 finished with success after 533209ms
+Apr 11 18:49:41 localhost.localdomain sudo[2375]: pam_unix(sudo:session): session closed for user root
+Apr 11 18:49:41 localhost.localdomain audit[2375]: USER_END pid=2375 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:49:41 localhost.localdomain audit[2375]: CRED_DISP pid=2375 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:50:24 localhost.localdomain systemd[1]: Starting Cleanup of Temporary Directories...
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/libgpod.conf:1] Line references path below legacy directory /var/run/, updating /var/run/libgpod → /run/libgpod; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/mdadm.conf:1] Line references path below legacy directory /var/run/, updating /var/run/mdadm → /run/mdadm; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/pptp.conf:1] Line references path below legacy directory /var/run/, updating /var/run/pptp → /run/pptp; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/radvd.conf:1] Line references path below legacy directory /var/run/, updating /var/run/radvd → /run/radvd; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/samba.conf:1] Line references path below legacy directory /var/run/, updating /var/run/samba → /run/samba; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/usr/lib/tmpfiles.d/spice-vdagentd.conf:2] Line references path below legacy directory /var/run/, updating /var/run/spice-vdagentd → /run/spice-vdagentd; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd-tmpfiles[2391]: [/etc/tmpfiles.d/vpnc.conf:1] Line references path below legacy directory /var/run/, updating /var/run/vpnc → /run/vpnc; please update the tmpfiles.d/ drop-in file accordingly.
+Apr 11 18:50:24 localhost.localdomain systemd[1]: Started Cleanup of Temporary Directories.
+Apr 11 18:50:24 localhost.localdomain audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:50:24 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:50:28 localhost.localdomain dhclient[1098]: DHCPREQUEST on ens33 to 192.168.154.254 port 67 (xid=0x358c021b)
+Apr 11 18:50:28 localhost.localdomain dhclient[1098]: DHCPACK from 192.168.154.254 (xid=0x358c021b)
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3830] dhcp4 (ens33):   address 192.168.154.128
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3833] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3833] dhcp4 (ens33):   gateway 192.168.154.2
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3834] dhcp4 (ens33):   lease time 1800
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3834] dhcp4 (ens33):   nameserver '192.168.154.2'
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3834] dhcp4 (ens33):   domain name 'localdomain'
+Apr 11 18:50:28 localhost.localdomain NetworkManager[840]: <info>  [1555033828.3834] dhcp4 (ens33): state changed bound -> bound
+Apr 11 18:50:28 localhost.localdomain dbus-daemon[726]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.16' (uid=0 pid=840 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Apr 11 18:50:28 localhost.localdomain systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr 11 18:50:28 localhost.localdomain dbus-daemon[726]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr 11 18:50:28 localhost.localdomain audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:50:28 localhost.localdomain nm-dispatcher[2396]: req:1 'dhcp4-change' [ens33]: new request (3 scripts)
+Apr 11 18:50:28 localhost.localdomain systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr 11 18:50:28 localhost.localdomain nm-dispatcher[2396]: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Apr 11 18:50:28 localhost.localdomain dhclient[1098]: bound to 192.168.154.128 -- renewal in 681 seconds.
+Apr 11 18:50:43 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:50:53 localhost.localdomain audit[2407]: USER_ACCT pid=2407 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="vrezz" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:50:53 localhost.localdomain sudo[2407]:    vrezz : TTY=pts/0 ; PWD=/home/vrezz ; USER=root ; COMMAND=/usr/bin/systemctl restart systemd-journald
+Apr 11 18:50:53 localhost.localdomain audit[2407]: USER_CMD pid=2407 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/vrezz" cmd=73797374656D63746C20726573746172742073797374656D642D6A6F75726E616C64 terminal=pts/0 res=success'
+Apr 11 18:50:53 localhost.localdomain audit[2407]: CRED_REFR pid=2407 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:50:53 localhost.localdomain sudo[2407]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Apr 11 18:50:53 localhost.localdomain sudo[2407]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 11 18:50:53 localhost.localdomain audit[2407]: USER_START pid=2407 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 11 18:50:53 localhost.localdomain systemd[1]: Stopped Flush Journal to Persistent Storage.
+Apr 11 18:50:53 localhost.localdomain audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 11 18:50:53 localhost.localdomain systemd[1]: Stopping Flush Journal to Persistent Storage...
+Apr 11 18:50:53 localhost.localdomain systemd[1]: Stopping Journal Service...
+Apr 11 18:50:53 localhost.localdomain systemd-journald[555]: Journal stopped
